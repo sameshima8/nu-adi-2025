@@ -8,7 +8,7 @@ class Particle {
   color c;
 
   Particle(PVector l) {
-    acceleration = new PVector(0, 0.05);
+    acceleration = new PVector(0, 0.0001);
     velocity = new PVector(random(-1, 1), random(-2, 0));
     position = l.copy();
     lifespan = 255.0;
