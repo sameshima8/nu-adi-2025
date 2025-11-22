@@ -32,7 +32,7 @@ class CrazyParticle extends Particle {
     pushMatrix();
     translate(position.x, position.y);
     rotate(theta);
-    stroke(255, lifespan);
+    stroke(c, lifespan);
     line(0, 0, 25, 0);
     popMatrix();
   }
