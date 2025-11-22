@@ -5,12 +5,14 @@ class Particle {
   PVector velocity;
   PVector acceleration;
   float lifespan;
+  color c;
 
   Particle(PVector l) {
     acceleration = new PVector(0, 0.05);
     velocity = new PVector(random(-1, 1), random(-2, 0));
     position = l.copy();
     lifespan = 255.0;
+    c = color(random(127,255),random(127,255),random(127,255));
   }
 
   void run() {
@@ -27,8 +29,8 @@ class Particle {
 
   // Method to display
   void display() {
-    stroke(255, lifespan);
-    fill(255, lifespan);
+    stroke(c, lifespan);
+    fill(c, lifespan);
     ellipse(position.x, position.y, 8, 8);
   }
 
