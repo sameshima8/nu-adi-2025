@@ -26,7 +26,7 @@ void draw() {
   if (systems.isEmpty()) {
     fill(255);
     textAlign(CENTER);
-    text("click mouse to add particle systems", width/2, height/2);
+    text("Click mouse to add particle systems!", width/2, height/2);
   }
 }
 
