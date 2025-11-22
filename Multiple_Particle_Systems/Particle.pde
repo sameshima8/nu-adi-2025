@@ -12,7 +12,7 @@ class Particle {
     velocity = new PVector(random(-1, 1), random(-2, 0));
     position = l.copy();
     lifespan = 255.0;
-    c = color(255,255,0);
+    c = color(random(127,255),random(127,255),random(127,255));
   }
 
   void run() {
